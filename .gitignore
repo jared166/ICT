@@ -1,0 +1,13 @@
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Herramientas locales
+node_modules/
+tools/out/
+
+# Insumos internos: no se publican (el repositorio es público)
+docs/privado/

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115.47" width="100" height="115.47" role="img" aria-label="Marketing Masters Group">
+  <!-- Provisorio hasta tener el vector oficial. Recreación del isotipo de Marketing Masters Group (hexágono vertical con degradado y "MM" en blanco). -->
+  <defs>
+    <linearGradient id="mmg-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A73E8"/>
+      <stop offset="1" stop-color="#4A4A4A"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#mmg-g)" d="M50 0 L100 28.87 L100 86.6 L50 115.47 L0 86.6 L0 28.87Z"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.8" stroke-linejoin="miter" stroke-miterlimit="10"><polyline points="22.4,69.5 22.4,46.5 34,65 45.6,46.5 45.6,69.5"/><polyline points="54.4,69.5 54.4,46.5 66,65 77.6,46.5 77.6,69.5"/></g>
+</svg>

@@ -1,0 +1,61 @@
+/* I.C.T. by Marketing Masters Group · Tokens. Colores exactos del manual de MMG.
+   Contraste (detalle en CLAUDE.md): blanco sobre #2D3748/#4A4A4A/#1B2230 libre; blanco sobre #1A73E8
+   solo negrita o ≥ 18 px; NUNCA texto blanco sobre #37B1AB (2,61:1). */
+
+@font-face { font-family: "Barlow"; font-weight: 600; font-display: swap; src: url("../fonts/barlow-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 700; font-display: swap; src: url("../fonts/barlow-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-weight: 700; font-display: swap; src: url("../fonts/barlow-semi-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 400; font-display: swap; src: url("../fonts/lato-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/lato-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 700; font-display: swap; src: url("../fonts/lato-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 900; font-display: swap; src: url("../fonts/lato-latin-900-normal.woff2") format("woff2"); }
+
+:root {
+  --mmg-azul:        #1A73E8;
+  --mmg-gris:        #4A4A4A;
+  --mmg-azul-2:      #2D3748;
+  --mmg-celeste:     #37B1AB;   /* acento propio de I.C.T. (el Tracking) */
+  --mmg-blanco:      #FFFFFF;
+  --mmg-fondo-suave: #F5F7FA;   /* derivado, para alternar secciones */
+  --mmg-noche:       #1B2230;   /* derivado, solo fondos de impacto */
+
+  --mmg-grad-logo:   linear-gradient(180deg, #1A73E8 0%, #4A4A4A 100%);
+  --mmg-grad-oscuro: linear-gradient(135deg, #1A73E8 0%, #2D3748 100%);
+  --mmg-grad-acento: linear-gradient(135deg, #1A73E8 0%, #37B1AB 100%);
+
+  /* Derivados de apoyo */
+  --texto: var(--mmg-gris);
+  --texto-fuerte: var(--mmg-azul-2);
+  --texto-claro-oscuro: #C9D2DF;   /* cuerpo sobre --mmg-noche: 11,5:1 */
+  --texto-tenue-oscuro: #9AA6B8;   /* secundario sobre --mmg-noche: 7,0:1 */
+  --borde: #E3E8EF;
+  --borde-oscuro: rgba(255, 255, 255, .12);
+  --gris-apagado: #6B7280;          /* sobre blanco: 4,83:1 */
+
+  --font-titulos: "Bahnschrift", "Barlow", "Segoe UI", Arial, sans-serif;
+  --font-display: "Barlow Semi Condensed", "Bahnschrift", "Barlow", "Segoe UI", Arial, sans-serif;
+  --font-cuerpo: "Lato", "Segoe UI", Arial, sans-serif;
+
+  --radio-tarjeta: 14px;
+  --radio-boton: 10px;
+  --radio-celular: 28px;
+  --sombra: 0 10px 30px rgba(45, 55, 72, .10);
+  --sombra-alta: 0 18px 48px rgba(45, 55, 72, .16);
+
+  --ancho: 1160px;
+  --gutter: clamp(20px, 5vw, 40px);
+  --seccion-y: clamp(72px, 10vw, 128px);
+  --header-h: 56px;
+
+  --hex: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  --t-rapida: 180ms;
+  --t-media: 420ms;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+
+  /* Patrón de hexágonos (5%) para fondos oscuros */
+  --patron-hex: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='.05' stroke-width='1'%3E%3Cpath d='M28 0 56 16.17V48.5L28 64.67 0 48.5V16.17zM28 64.67V97'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media (min-width: 960px) {
+  :root { --header-h: 68px; }
+}

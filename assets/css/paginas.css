@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Páginas simples: agenda, no califica y 404
+   ========================================================================== */
+.bloque-placeholder { border: 1px dashed #B8C2D1; border-radius: var(--radio-tarjeta); padding: 28px; background: var(--mmg-fondo-suave); text-align: center; }
+.bloque-placeholder p { margin-bottom: 0; }
+.calendario-embed { width: 100%; min-height: 980px; border: 0; border-radius: var(--radio-tarjeta); background: #fff; box-shadow: var(--sombra); }
+@media (min-width: 768px) { .calendario-embed { min-height: 820px; } }
+
+.simple { padding: calc(var(--header-h) + 56px) 0 80px; min-height: 72svh; }
+.simple h1 { font-size: clamp(32px, 4.6vw, 52px); }
+.simple .lead { max-width: 62ch; }
+.agenda__cal { margin-top: 32px; }

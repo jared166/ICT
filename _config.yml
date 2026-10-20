@@ -1,0 +1,9 @@
+# GitHub Pages (Jekyll) publica el sitio tal cual, pero sin estas carpetas y archivos internos.
+# Las páginas son HTML sin front matter: Jekyll las copia sin procesarlas.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - tools/
+  - docs/
+  - assets/img/ref/
+  - CNAME.ejemplo

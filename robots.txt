@@ -1,0 +1,4 @@
+# BETA: sitio sin indexar. Para la versión definitiva, reemplazar "Disallow: /" por "Allow: /"
+# y borrar <meta name="robots" content="noindex, nofollow"> de todas las páginas.
+User-agent: *
+Disallow: /

@@ -1,0 +1,5 @@
+# [PENDIENTE] Dominio propio para GitHub Pages.
+# Cuando exista el dominio: renombrar este archivo a "CNAME" (sin extensión) y dejar
+# en él una sola línea con el dominio, sin comentarios, por ejemplo:
+#   ict.marketingmaster.top
+# GitHub Pages lee la primera línea de CNAME como dominio; por eso no se deja un CNAME vacío o comentado.

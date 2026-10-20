@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Plantilla de páginas legales: lectura cómoda, índice lateral en escritorio
+   ========================================================================== */
+.legal { padding: calc(var(--header-h) + 40px) 0 88px; background: #fff; }
+.legal__grid { display: grid; gap: 32px; }
+@media (min-width: 1000px) { .legal__grid { grid-template-columns: 240px minmax(0, 1fr); gap: 64px; align-items: start; } }
+
+.legal__indice { font-size: 15px; }
+.legal__indice nav { padding: 18px 20px; border-radius: var(--radio-tarjeta); background: var(--mmg-fondo-suave); }
+.legal__indice-titulo { margin: 0 0 8px; font-family: var(--font-titulos); font-weight: 600; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: #237C78; }
+.legal__indice ol { list-style: none; display: grid; gap: 2px; }
+.legal__indice a { display: block; padding: 6px 0; min-height: 32px; color: var(--texto-fuerte); text-decoration: none; line-height: 1.35; }
+.legal__indice a:hover { color: var(--mmg-azul); text-decoration: underline; }
+@media (min-width: 1000px) { .legal__indice { position: sticky; top: calc(var(--header-h) + 24px); max-height: calc(100vh - var(--header-h) - 48px); overflow: auto; } }
+@media (max-width: 999px) { .legal__indice ol { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); column-gap: 18px; } .legal__indice a { min-height: 44px; display: flex; align-items: center; } }
+
+.legal__cuerpo { max-width: 74ch; }
+.legal__cuerpo h1 { font-size: clamp(30px, 4vw, 44px); margin-top: 8px; }
+.legal__cuerpo h2 { font-size: clamp(22px, 2.4vw, 28px); margin-top: 44px; padding-top: 8px; }
+.legal__cuerpo section:first-of-type h2 { margin-top: 28px; }
+.legal__cuerpo ul, .legal__cuerpo ol { padding-left: 1.3em; margin: 0 0 1em; display: grid; gap: 6px; }
+.legal__cuerpo strong { color: var(--texto-fuerte); }
+.legal__version { color: var(--gris-apagado); font-size: 15px; }
+.legal__borrador { margin: 0 0 20px; padding: 12px 16px; border-radius: 10px; background: #FFF7E0; border: 1px solid #EBC75C; color: #5C4300; font-weight: 700; font-size: 15px; }
+.legal__aviso-pago { margin: 0 0 8px; padding: 12px 16px; border-radius: 10px; background: var(--mmg-fondo-suave); border-left: 4px solid var(--mmg-azul); font-weight: 700; color: var(--texto-fuerte); }
+
+.legal__datos { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0 0 1em; padding: 18px 20px; border-radius: 12px; background: var(--mmg-fondo-suave); }
+.legal__datos dt { font-weight: 700; color: var(--texto-fuerte); }
+.legal__datos dd { margin: 0; }
+@media (max-width: 520px) { .legal__datos { grid-template-columns: 1fr; } .legal__datos dd { margin-bottom: 8px; } }
+
+/* Corchetes y pendientes visibles, resaltados en amarillo suave */
+mark.pendiente, .pendiente { background: #FFF3B8; color: #3D3200; padding: 0 3px; border-radius: 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+.tabla-legal { overflow-x: auto; margin: 0 0 1em; border: 1px solid var(--borde); border-radius: 12px; }
+.tabla-legal table { width: 100%; min-width: 0; font-size: 15px; }
+.tabla-legal th, .tabla-legal td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--borde); }
+.tabla-legal thead th { background: var(--mmg-fondo-suave); font-size: 14px; color: var(--texto-fuerte); }
+.tabla-legal tbody tr:last-child th, .tabla-legal tbody tr:last-child td { border-bottom: 0; }
+.tabla-legal code { font-size: 14px; color: var(--texto-fuerte); word-break: break-word; }
+@media (max-width: 760px) {
+  .tabla-legal { border: 0; overflow: visible; }
+  .tabla-legal thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tabla-legal table, .tabla-legal tbody, .tabla-legal tr { display: block; }
+  .tabla-legal tr { margin-bottom: 12px; padding: 12px 14px; border: 1px solid var(--borde); border-radius: 12px; }
+  .tabla-legal th, .tabla-legal td { display: block; padding: 4px 0; border: 0; }
+  .tabla-legal tbody th { padding-bottom: 8px; margin-bottom: 4px; border-bottom: 1px solid var(--borde); }
+  .tabla-legal td::before { content: attr(data-col) ": "; font-weight: 700; color: var(--texto-fuerte); }
+}
+.legal__fuentes { font-size: 15px; }
